@@ -1,0 +1,65 @@
+.kanban-card {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #61dafb;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .chips {
+    display: flex;
+    justify-content: center;
+
+    .chip {
+      margin: 0 5px;
+      border-radius: 25px;
+      padding: 5px 10px;
+      font-style: italic;
+
+      &--backend {
+        background-color: lightgreen;
+      }
+
+      &--ui {
+        background-color: lightcoral;
+      }
+
+      &--security {
+        background-color: orange;
+      }
+
+      &--performance {
+        background-color: lightyellow;
+      }
+
+      &--maintenanceschedule {
+        background-color: violet;
+      }
+
+      &--invoice {
+        background-color: lightgrey;
+      }
+    }
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .user-container {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 25px;
+        margin-right: 10px;
+        border: solid 1px black;
+        border-radius: 50%;
+      }
+    }
+  }
+}
